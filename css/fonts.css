@@ -1,0 +1,47 @@
+@font-face {
+	font-family: 'Volkhov';
+	src: url(/fonts/volkhov-regular.woff2) format(woff2),
+		url(/fonts/volkhov-regular.woff) format(woff)
+}
+
+@font-face {
+	font-family: 'Volkhov-Bold';
+	src: url(/fonts/volkhov-bold.woff2) format(woff2),
+		url(/fonts/volkhov-bold.woff) format(woff)
+}
+
+@font-face {
+	font-family: 'Volkhov-Italic';
+	src: url(/fonts/volkhov-italic.woff2) format(woff2),
+		url(/fonts/volkhov-italic.woff) format(woff)
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url(/fonts/poppins-regular.woff) format(woff),
+    url(/fonts/poppins-regular.woff2) format(woff2);
+}
+
+@font-face {
+    font-family: 'Poppins-Bold';
+    src: url(/fonts/poppins-bold.woff) format(woff),
+    url(/fonts/poppins-bold.woff2) format(woff2);
+}
+
+@font-face {
+    font-family: 'Poppins-Italic';
+    src: url(/fonts/poppins-italic.woff) format(woff),
+    url(/fonts/poppins-italic.woff2) format(woff2);
+}
+
+@font-face {
+    font-family: 'OpenSans';
+    src: url(/fonts/OpenSans-Regular.woff) format(woff),
+    url(/fonts/OpenSans-Regular.woff2) format(woff2);
+}
+
+@font-face {
+    font-family: 'OpenSans-Bold';
+    src: url(/fonts/OpenSans-Bold.woff) format(woff),
+    url(/fonts/OpenSans-Bold.woff2) format(woff2);
+}
