@@ -81,6 +81,10 @@ nav{
     background-image: url(images/illustration_principale.jpg);
     background-size: cover;
     padding: 100px 0px 100px 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
 .article1{
@@ -150,8 +154,10 @@ button{
 }
 .section2{
     padding: 100px 0px 100px 150px; 
-    display: block;
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
 }
 .article2{
     text-align: center;
@@ -165,8 +171,8 @@ button{
 }
 .conteneur_container{
     margin-top: 10px;
-    display: block;
-    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
     width: 100%;
     
 }
@@ -174,6 +180,7 @@ button{
     display: flex;
     flex-direction: row;
     justify-content: center;
+    flex-wrap: wrap;
     width: 100%;
     
 }
@@ -210,6 +217,7 @@ button{
     display: flex;
     flex-direction: row;
     justify-content: center;
+    flex-wrap: wrap;
     width: 100%;
 }
  #ikura{
@@ -220,7 +228,7 @@ button{
     text-align: center;
     margin: 0;
     display: inline-block;
-    background-color: white;
+    background-color: white 0%;
     vertical-align: top;
     border-radius: 20px;
     margin-right: 30px;
@@ -228,29 +236,35 @@ button{
     
 }
 .carte::before{
+    content: " ";
     transition: transform 700ms, opacity 700ms;
     transform: rotate(-90deg);
-    content: " ";
     background-image: url(/images/decoration_rose.png);
+    background-repeat: no-repeat;
     position: absolute;
     width: 100px;
     height: 100px;
-    z-index: -1;
-    margin-left: -150px;
+    margin-left: -170px;
     margin-top: 300px;
+    z-index: -1;
     opacity: 0;
+    /*
+    background-attachment: scroll;
+    */
 }
 
 .carte:hover{
-    -webkit-box-shadow: 0px 0px 50px -20px rgba(0,0,0,0.46); 
-    box-shadow: 0px 0px 50px -20px rgba(0,0,0,0.46);    
-    transition-property: box-shadow;
-    transition-duration: 1s;
+    -webkit-box-shadow: 0px 3px 15px 0px rgba(0,0,0,0.2); 
+    box-shadow: 0px 3px 15px 0px rgba(0,0,0,0.2);
+    background-color: rgba(255, 255, 255, 100);
+    
     
 }
 .carte:hover::before {
     opacity: 100;
+    z-index: -1;
     transform: rotate(0deg);
+    
 }
 .conteneur-carte .carte:last-child{
     margin-right: 0;
@@ -274,6 +288,8 @@ button{
 }
 
 .section3{
+    display: flex;
+    flex-flow: column wrap;
     background-image: url(images/cgefjpg\ 1.png);
     background-size: cover;
     padding: 100px 0px 450px 150px;
@@ -305,8 +321,12 @@ button{
 .article3{
     width: 50%;
     margin-top: 100px;
+    display: flex;
+    flex-flow: column wrap;
 }
 .voyage_souligne{
+    display: flex;
+    flex-wrap: wrap;
 background-image: url(images/souligne_rose.svg);
 background-repeat: no-repeat;
 background-position: 0px 18%;
@@ -335,6 +355,8 @@ background-position: 0px 18%;
 }
 
 .section4{
+    display: flex;
+    flex-flow: column wrap;
     background-image: url(images/blanc\ 1.png);
     background-size: cover;
     padding: 400px 0px 100px 150px;
@@ -380,7 +402,7 @@ background-position: 0px 18%;
 .section5{
     padding: 100px 0px 100px 0px;
     display: flex;
-    flex-direction: column;
+    flex-flow: column wrap;
     justify-content: center;
     align-items: center;
     text-align: center;
