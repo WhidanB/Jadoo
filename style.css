@@ -17,6 +17,14 @@ header{
     background-color: white;
 }
 
+.context{
+    display: none;
+}
+
+.ctx_cont{
+    display: none;
+}
+
 .logohead{
     margin-left: 200px;
     height: 100%;
@@ -152,6 +160,9 @@ a{
 button{
     color: white;
 }
+section{
+    max-width: 100%;
+}
 .section2{
     padding: 100px 0px 100px 150px; 
     display: flex;
@@ -172,6 +183,7 @@ button{
 .conteneur_container{
     margin-top: 10px;
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
     width: 100%;
     
@@ -353,6 +365,9 @@ background-position: 0px 18%;
     display: inline-block;
     margin: 0;
 }
+.kebabier{
+    display: none;
+}
 
 .section4{
     display: flex;
@@ -408,12 +423,14 @@ background-position: 0px 18%;
     text-align: center;
 }
 .container_contact{
-    margin: auto;
-    width: 100%;
-    max-width: 1000px;
+    margin: 0;
+    width: 1000px;
     display: flex;
     flex-direction: row;
+    justify-content: center;
     margin-top: 40px;
+    
+
 }
 
 .formulaire{
@@ -424,7 +441,7 @@ background-position: 0px 18%;
     height: 100%;
     vertical-align: top;
     text-align: left;
-    padding: 50px 50px 65px 50px;
+    padding: 50px 50px 50px 50px;
     border-radius: 25px 0px 0px 25px;
     -webkit-box-shadow: 0px 0px 50px -20px rgba(0,0,0,0.46); 
     box-shadow: 0px 0px 50px -20px rgba(0,0,0,0.46);
@@ -434,13 +451,19 @@ background-position: 0px 18%;
     color: black;
 }
 .img_form{
+    display: block;
+    height: 100%;
     
-    width: 50%;
     
     
-    /*
+    
+    
     border-radius: 0px 25px 25px 0px;
-    */
+    
+}
+#img-form{
+    width: 100%;
+    border-radius: 0px 25px 25px 0px;
 }
 
 
@@ -562,10 +585,14 @@ footer{
 }
 
 .footer{
-    display: inline-block;
+    display: flex;
     height: 150px;
     margin-top: 80px;
     
+}
+#uber{
+    display: flex;
+    flex-direction: column;
 }
 
 #footer_logo{
@@ -616,6 +643,9 @@ footer{
     line-height: 26px;
     color: #5E6282;
     padding-left: 30px;
+}
+#uberlogo{
+    height: 30px;
 }
 .download{
     margin-top: 10px;
@@ -738,3 +768,191 @@ footer{
     }
     
     } 
+
+    @media screen and (max-width: 1024px){
+
+body{
+    width: 100%;
+    margin: 0 auto;
+}
+header{
+    width: 100%;
+    height: 30px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    position: sticky;
+    z-index: 5;
+    padding: 20px 0px;
+    top: 0px;
+    background-color: white;
+}
+
+.context{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 30px;
+}
+
+.ctx_cont{
+    display: block;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    text-decoration: underline;
+}
+
+nav{
+    display: none;
+}
+
+.logohead{
+    margin-left: 200px;
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+
+    
+}
+
+.section1{
+    background-image: url(images/illustration_principale.jpg);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 100px 0px 100px 0px;
+
+
+}
+.article1{
+    text-align: center;
+    margin: 0;
+}   
+.article2{
+    text-align: center;
+}
+
+.section2{
+    padding: 100px 0px 100px 0px;
+}
+
+.carré:last-of-type{
+    margin-top: 40px;
+}
+
+.section3{
+    padding: 0;
+    background-image: none;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    
+}
+.conteneur_video{
+    width: 100%;
+    justify-content: center;
+    position: static;
+}
+.video{
+    width: 100%;
+}
+.btn_vid{
+    display: none;
+}
+.wrapper{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    margin: 0;
+    width: 100%;
+    max-height: 100%;
+    z-index: 1;
+    position:static;
+}
+.img_wrap{
+    display: inline-block;
+    height: auto;
+    width: 50%;
+}
+.kebabier{
+width: 100%;
+display: inline-block;
+font-size: 0px;
+}
+/*
+.kebabier img{
+    width: 100%;
+    height: auto;
+    flex-shrink: 1;
+}
+*/
+.article3{
+    display: none;
+}
+.section4{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 100px 0px 100px 10px;
+    background-image: none;
+}
+.container_commander{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.sous_container_commander{
+    text-align: left;
+}
+
+.section5{
+    
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+#adios{
+    display: none;
+}
+.container_contact{
+    margin: 0;
+    max-width: 100%;
+    display: flex;
+    flex-direction: row;
+    margin-top: 40px;
+}
+
+.formulaire{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    height: 100%;
+    vertical-align: top;
+    text-align: left;
+    padding: 50px 50px 50px 50px;
+    border-radius: 25px 25px 25px 25px;
+    -webkit-box-shadow: 0px 0px 50px -20px rgba(0,0,0,0.46); 
+    box-shadow: 0px 0px 50px -20px rgba(0,0,0,0.46);
+}
+}
+.img_form{
+    display: none;
+}
+footer{
+    width: 100%;
+    height: 300px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    
+    background-color: #f3f3f3;
+}
+

@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user_scalable=no">
     <link rel="stylesheet" href="/css/fonts.css">
     <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/svg" href="images/logo_jadoo_1.svg" >
@@ -11,9 +11,19 @@
 </head>
 <body>
     <header>
+
+        <div class="context">
+          <img src="images/Rectangle 173.png" alt="" class="rekt">
+          <img src="images/Rectangle 173.png" alt="" class="rekt">
+          <img src="images/Rectangle 173.png" alt="" class="rekt">
+            
+        </div>
         <div class="logohead">
             <img src="images/logo_jadoo_1.svg" class="tete" alt="Icon Jadoo" height="50px">
             <img src="images/logo_jadoo_2.svg" alt="Logo Jadoo" height="35px">
+        </div>
+        <div class="ctx_cont">
+            <a href="">Contact</a>
         </div>
         <nav>
             <ul class="liens">
@@ -120,7 +130,10 @@
                 <h1 class="voyage_souligne">Un voyage gastronomique entre le Japon et la France...</h1>
                 <h5 class="biographie">Passé par des maisons étoilées en France, le cuisinier japonais s'est forgé une solide expérience dans l'Hexagone : aujourd'hui franc-comtois d'adoption, il maîtrise aujourd'hui les mélanges de cultures et de saveurs chaque jour au sein de son restaurant gastronomique.</h5>
             </article>
+            
+            
             <div class="wrapper">
+                <img class="kebabier" src="images/cgefjpg 1.png" alt="">
                 <img class="img_wrap"src="images/wrapper_illustration_1.jpg" alt="">
                 <img class="img_wrap"src="images/wrapper_illustration_2.jpg" alt="">
             </div>
@@ -157,7 +170,7 @@
     </section>
     <section class="section5" id="contact">
         <h4 class="rdv">PRENDRE RENDEZ-VOUS</h4>
-        <h2>Contactez-nous <br>pour réserver au restaurant</h2>
+        <h2>Contactez-nous <br><span id="adios">pour réserver au restaurant</span></h2>
         <div class="container_contact">
                 <div class="formulaire">
                     <form class="form" method="" action="">
@@ -189,7 +202,7 @@
                     </button>
                 </div>
                 <div class="img_form">
-                    <img src="images/Rectangle 171.png">
+                    <img id="img_form" src="images/Rectangle 171.png">
                 </div>
             
         </div>
@@ -218,9 +231,9 @@
                     <p>Prendre RDV</p>
                 </div>
             </article>
-            <article class="footer">
+            <article id="uber" class="footer">
                 <figure>
-                    <img src="images/logo_uberEats_2.svg" alt="">
+                    <img id="uberlogo" src="images/logo_uberEats_2.svg" alt="">
                     <p class="download">Téléchargez UberEats</p>
                 </figure>
                 <div class="footer_btn">
