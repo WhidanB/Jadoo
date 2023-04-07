@@ -956,3 +956,36 @@ footer{
     background-color: #f3f3f3;
 }
 
+@media screen and (max-width: 656px){
+
+    .conteneur_container {
+        margin-top: 10px;
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+      }
+
+    .container_plat{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        overflow: scroll;
+        width: 100%;
+    }
+
+    .carré:last-of-type{
+        margin-top: 0;
+    }
+    .conteneur-carte {
+        margin-top: 80px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    .carte{
+        display: flex;
+        flex-direction: row;
+    }
+}
