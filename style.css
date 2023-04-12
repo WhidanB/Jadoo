@@ -302,7 +302,7 @@ section{
 .section3{
     display: flex;
     flex-flow: column wrap;
-    background-image: url(images/cgefjpg\ 1.png);
+    background-image: url(images/illustration_chef.jpg);
     background-size: cover;
     padding: 100px 0px 450px 150px;
 }
@@ -353,17 +353,19 @@ background-position: 0px 18%;
 
 .wrapper{
     width: 100%;
-    margin-top: 100px;
-    display: inline-block;
-    position:absolute;
+    margin: 0;
+    display: flex;
+    position: absolute;
+    
     z-index: 1;
-    left: 0%;
-    top: 3300px;
+    
 }
 
 .img_wrap{
     display: inline-block;
     margin: 0;
+    margin-top: 1000px;
+    
 }
 .kebabier{
     display: none;
@@ -876,6 +878,7 @@ nav{
     display: inline-block;
     height: auto;
     width: 50%;
+    margin-top: 0;
 }
 .kebabier{
 width: 100%;
@@ -965,13 +968,7 @@ footer{
         width: 100%;
       }
 
-    .container_plat{
-        display: flex;
-        flex-direction: row;
-        flex-wrap: nowrap;
-        overflow-x: scroll;
-        width: 100%;
-    }
+    
 
     .carré:last-of-type{
         margin-top: 0;
@@ -1040,5 +1037,103 @@ footer{
         z-index: -1;
         transform: rotate(0deg);
         
+    }
+
+    footer{
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: #f3f3f3;
+    }
+
+    #uber{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 150px;
+        margin-top: 80px;
+
+    }
+
+    .conteneur_container{
+        display: none;
+        
+    }
+    /*
+    @keyframes slidy {
+      0% { translate:0% }
+      25% { translate: -66%; }
+      50% { translate: -133%; }
+      75% { translate: -200%; }
+      100% { translate: 0%; }
+    }
+    */
+
+    .slider{
+        overflow: hidden;
+        width: 100%;
+    }
+    .container_plat{
+        flex-flow: row nowrap;
+        justify-content: start;
+        padding: 20px 0px 20px 0px;
+        margin: 0;
+        gap:0px
+    }
+
+    .carré{
+    width :80%;
+    border: none;
+    flex-shrink: 0;
+    margin: 0;
+    margin-left: 10%;
+    margin-right: 0;
+    }
+
+    .c1 {
+        animation-name: cardanim;
+        animation-duration: 10s;
+        animation-timing-function: ease-in-out;
+        animation-iteration-count: infinite;
+    }
+    .c2 {
+        animation-name: cardanim2;
+        animation-duration: 10s;
+        animation-timing-function: ease-in-out;
+        animation-iteration-count: infinite;
+    }
+    .c3 {
+        animation-name: cardanim3;
+        animation-duration: 10s;
+        animation-timing-function: ease-in-out;
+        animation-iteration-count: infinite;
+    }
+    @keyframes cardanim {
+        0% {translate: 0; opacity: 100;}
+        20% { translate: 0%; opacity: 100;}
+        30% { translate: -110%; opacity: 0;}
+        35%{ translate: 115%; opacity: 0;}
+        80%{ translate: 115%; opacity: 0;}
+        90% { translate: 0%; opacity: 100;}
+        100% { translate: 0; opacity: 100;}
+    }
+    @keyframes cardanim2 {
+        0% {translate: 0v; opacity: 0;}
+        20% { translate: 0; opacity: 0;}
+        30% { translate: -113%; opacity: 100;}
+        50% { translate: -113%; opacity: 100;}
+        60% { translate: -220%; opacity: 0;}
+        100% { translate: -220%; opacity: 0;}
+    }
+    @keyframes cardanim3 {
+        0% {translate: 0; opacity: 0;}
+        50% { translate: -110%; opacity: 0;}
+        60% { translate: -225%; opacity: 100;}
+        80% { translate: -225%; opacity: 100;}
+        90% { translate: -330%; opacity: 0;}
+        100% { translate: -330%; opacity: 0;}
     }
 }
