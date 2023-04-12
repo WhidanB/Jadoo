@@ -197,6 +197,10 @@ section{
     
 }
 
+.slider{
+    display: none;
+}
+
 .carré img{
     border-top-right-radius: 20px;
     border-top-left-radius: 20px;
@@ -832,7 +836,11 @@ nav{
 .article1{
     text-align: center;
     margin: 0;
-}   
+}
+
+.bienvenue{
+    background-position: 90% 95%;
+}
 .article2{
     text-align: center;
 }
@@ -840,7 +848,9 @@ nav{
 .section2{
     padding: 100px 0px 100px 0px;
 }
-
+.slider{
+    display: none;
+}
 .carré:last-of-type{
     margin-top: 40px;
 }
@@ -958,8 +968,28 @@ footer{
     
     background-color: #f3f3f3;
 }
+footer{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    
+    background-color: #f3f3f3;
+}
+
+
 }
 @media screen and (max-width: 656px){
+
+    .bienvenue{
+        font-size: 41px;
+        background: url(images/souligne_rose.svg) no-repeat;
+        background-position: 80% 97%;
+        background-size: 50%;
+        margin-bottom: 50px;
+    }
 
     .conteneur_container {
         margin-top: 10px;
@@ -1073,14 +1103,16 @@ footer{
     */
 
     .slider{
+        display: flex;
         overflow: hidden;
         width: 100%;
     }
     .container_plat{
+        
         flex-flow: row nowrap;
-        justify-content: start;
+        justify-content: center;
         padding: 20px 0px 20px 0px;
-        margin: 0;
+        margin-left: 400px;
         gap:0px
     }
 
@@ -1089,7 +1121,7 @@ footer{
     border: none;
     flex-shrink: 0;
     margin: 0;
-    margin-left: 10%;
+    
     margin-right: 0;
     }
 
