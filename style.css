@@ -845,7 +845,7 @@ footer {
   .img_wrap {
     display: inline-block;
     height: auto;
-    width: 50%;
+    width: 100%;
     margin-top: 0;
   }
   .kebabier {
@@ -950,12 +950,13 @@ footer {
   }
   .carte {
     display: block;
+    margin: 0;
     border-radius: 0;
     width: 420px;
   }
   .carte figure {
     display: flex;
-    flex-flow: row nowrap;
+    flex-flow: row wrap;
     justify-content: flex-start;
     font-size: 16px;
   }
@@ -966,6 +967,7 @@ footer {
   }
   .carte figcaption p {
     display: block;
+    white-space: initial;
   }
   .carte > figure > img {
     max-height: 110px;
@@ -973,6 +975,7 @@ footer {
   }
   .sushi {
     font-size: 18px;
+    padding-bottom: 0;
   }
   .carte::before {
     content: " ";
@@ -1170,5 +1173,8 @@ footer {
 
   .texte_gris {
     margin: 5px;
+  }
+  .carte figure figcaption {
+    font-size: 14px;
   }
 }
